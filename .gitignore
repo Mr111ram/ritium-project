@@ -1,2 +1,4 @@
 .yarn
 node_modules
+app/server
+app/web

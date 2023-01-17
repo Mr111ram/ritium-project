@@ -19,6 +19,7 @@ const join = (...args) => node_join(__dirname, ...args)
  * TODO: ADD BUILD SUPPORT
  */
 
+/** @type {import('vite').UserConfig} */
 const config = defineConfig({
 	mode: NODE_ENV,
 	root: join('web'),
@@ -27,8 +28,9 @@ const config = defineConfig({
 	appType: 'spa',
 	server: {},
 	build: {
-		outDir: join('app', 'web'),
-		assetsDir: join('app', 'web', 'assets'),
+		outDir: '../app/web',
+		assetsDir: 'assets',
+		emptyOutDir: true,
 		target: 'modules',
 		minify: 'terser',
 	},
