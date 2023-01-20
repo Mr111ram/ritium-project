@@ -28,12 +28,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/vue", "npm:2.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:5.48.1"],\
             ["@typescript-eslint/parser", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:5.48.1"],\
             ["@vitejs/plugin-vue", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:4.0.0"],\
             ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.32.0"],\
             ["eslint-plugin-vue", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:9.9.0"],\
+            ["sass", "npm:1.57.1"],\
             ["stylelint", "npm:14.16.1"],\
             ["terser", "npm:5.16.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"],\
@@ -621,6 +623,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/vue", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-vue-npm-2.0.0-f610479937-c5e6f7281d.zip/node_modules/@types/vue/",\
+          "packageDependencies": [\
+            ["@types/vue", "npm:2.0.0"],\
+            ["vue", "npm:3.2.45"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@typescript-eslint/eslint-plugin", [\
         ["npm:5.48.1", {\
           "packageLocation": "./.yarn/cache/@typescript-eslint-eslint-plugin-npm-5.48.1-ea5dbe8a2e-d8d73d123d.zip/node_modules/@typescript-eslint/eslint-plugin/",\
@@ -843,7 +855,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@vitejs/plugin-vue", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:4.0.0"],\
             ["@types/vite", null],\
-            ["@types/vue", null],\
+            ["@types/vue", "npm:2.0.0"],\
             ["vite", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:4.0.4"],\
             ["vue", "npm:3.2.45"]\
           ],\
@@ -2318,6 +2330,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["immutable", [\
+        ["npm:4.2.2", {\
+          "packageLocation": "./.yarn/cache/immutable-npm-4.2.2-613ea9d8d9-4d6437ea93.zip/node_modules/immutable/",\
+          "packageDependencies": [\
+            ["immutable", "npm:4.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["import-fresh", [\
         ["npm:3.3.0", {\
           "packageLocation": "./.yarn/cache/import-fresh-npm-3.3.0-3e34265ca9-2cacfad06e.zip/node_modules/import-fresh/",\
@@ -3507,12 +3528,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["ritium-project", "workspace:."],\
+            ["@types/vue", "npm:2.0.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:5.48.1"],\
             ["@typescript-eslint/parser", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:5.48.1"],\
             ["@vitejs/plugin-vue", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:4.0.0"],\
             ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.32.0"],\
             ["eslint-plugin-vue", "virtual:0a65766cd4848dac640660b722dbd81b13650bbcb2c9594b29636546d6a99951465632721124454be3589527549d78229ff5155d2585cd713034403bd1bbace8#npm:9.9.0"],\
+            ["sass", "npm:1.57.1"],\
             ["stylelint", "npm:14.16.1"],\
             ["terser", "npm:5.16.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"],\
@@ -3568,6 +3591,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-cab8f25ae6.zip/node_modules/safer-buffer/",\
           "packageDependencies": [\
             ["safer-buffer", "npm:2.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sass", [\
+        ["npm:1.57.1", {\
+          "packageLocation": "./.yarn/cache/sass-npm-1.57.1-bafdba484f-734a08781b.zip/node_modules/sass/",\
+          "packageDependencies": [\
+            ["sass", "npm:1.57.1"],\
+            ["chokidar", "npm:3.5.3"],\
+            ["immutable", "npm:4.2.2"],\
+            ["source-map-js", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4178,7 +4213,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.21"],\
             ["resolve", "patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"],\
             ["rollup", "npm:3.10.0"],\
-            ["sass", null],\
+            ["sass", "npm:1.57.1"],\
             ["stylus", null],\
             ["sugarss", null],\
             ["terser", "npm:5.16.1"]\

@@ -36,8 +36,8 @@ const config = defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@': join('web', 'src'),
-			'@public': join('web', 'public'),
+			'@': './web/src',
+			'@public': './web/public',
 		},
 	},
 	plugins: [progress(), eslint({ cache: false }), stylelint(), vue()],
