@@ -1,19 +1,30 @@
+<script setup>
+import RButton from './components/Button.vue'
+import RIcon from './components/Icon.vue'
+</script>
+
 <template>
 	<main>
-		<header>
-			<button>click</button>
-			<button>click</button>
-			<button>click</button>
-			<button>click</button>
-			<button>click</button>
+		<header class="bar">
+			<div class="bar_left">
+				<h2>header bar</h2>
+			</div>
+			<div class="bar_right">
+				<RButton r_type="iconic">
+					<RIcon r_icon="check" />
+				</RButton>
+				<RButton r_type="iconic">
+					<RIcon r_icon="plus" />
+				</RButton>
+				<RButton r_type="iconic">
+					<RIcon r_icon="star" />
+				</RButton>
+				<RButton r_type="iconic">
+					<RIcon r_icon="apps" />
+				</RButton>
+			</div>
 		</header>
-		<section>
-			<h1>Main app view</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem asperiores
-				amet iure reiciendis obcaecati sed?
-			</p>
-		</section>
+		<router-view />
 	</main>
 </template>
 
@@ -33,4 +44,16 @@ main
 	header
 		height: $size-main_header--height
 		background-color: $color-header_background
+	section
+		padding: .3em .7em
+
+.bar
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0 .7em
+	&-left
+		background-color: darkkhaki
+	&-right
+		background-color: dodgerblue
 </style>

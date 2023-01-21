@@ -1,7 +1,7 @@
 <script setup>
-import RitiumRoot from '@/Ritium/Root.vue'
-import RitiumAside from '@/Ritium/Aside.vue'
-import RitiumMain from '@/Ritium/Main.vue'
+import RitiumRoot from './Ritium/Root.vue'
+import RitiumAside from './Ritium/Aside.vue'
+import RitiumMain from './Ritium/Main.vue'
 </script>
 
 <template>
@@ -33,7 +33,7 @@ html
 
 #aside
 	min-width: 200px
-	grid-area: "aside"
+	grid-area: aside
 #main
-	grid-area: "main"
+	grid-area: main
 </style>

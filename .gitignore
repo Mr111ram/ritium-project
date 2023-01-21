@@ -1,6 +1,6 @@
 .yarn
+.vscode
+.idea
 node_modules
 app/server
 app/web
-.vscode
-.idea

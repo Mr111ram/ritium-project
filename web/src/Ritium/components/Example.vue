@@ -11,6 +11,6 @@ export default {
 </script>
 
 <style lang="sass">
-@import '@/styles/_colors.sass'
-@import '@/styles/reset.sass'
+@import '../../styles/_colors.sass'
+@import '../../styles/reset.sass'
 </style>

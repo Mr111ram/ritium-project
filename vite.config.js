@@ -19,7 +19,6 @@ const join = (...args) => node_join(__dirname, ...args)
  * TODO: ADD BUILD SUPPORT
  */
 
-/** @type {import('vite').UserConfig} */
 const config = defineConfig({
 	mode: NODE_ENV,
 	root: join('web'),
@@ -36,8 +35,8 @@ const config = defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@': './web/src',
-			'@public': './web/public',
+			'@': join('web', 'src'),
+			'@public': join('web', 'public'),
 		},
 	},
 	plugins: [progress(), eslint({ cache: false }), stylelint(), vue()],
